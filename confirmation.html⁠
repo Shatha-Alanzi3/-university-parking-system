@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إشعار القبول - تقنية مواقف السيارات</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #3AB09E;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #2c9e8d;
+            padding: 15px 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 600px;
+            margin: 60px auto;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 1.8;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">من نحن</a>
+        <a href="services.html">خدماتنا</a>
+        <a href="booking.html">الحجز</a>
+    </nav>
+
+    <div class="container">
+        <h2>إشعار تأكيد الحجز</h2>
+        <p>مرحبًا بك،</p>
+        <p>نود أن نعلمك بأن حجزك قد تم بنجاح! سعداء بتأكيد حجزك في نظامنا، ونتطلع لتقديم تجربة سلسة لك.</p>
+        <br>
+        <p>شكرًا لاختيارك <strong>تقنية مواقف السيارات</strong>!</p>
+    </div>
+
+</body>
+</html>
