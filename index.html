@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الرئيسية - تقنية مواقف السيارات</title>
+    <title>الصفحة الرئيسية - تقنية مواقف السيارات</title>
     <style>
         * {
             margin: 0;
@@ -11,78 +11,148 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         body {
             background-color: #3AB09E;
+            min-height: 100vh;
             color: white;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
         }
+
+        /* شريط التنقل العلوي */
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 40px;
+            padding: 15px 30px;
             background-color: #319a8a;
         }
+
         .nav-links a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin-left: 20px;
             font-size: 0.9em;
+            font-weight: 600;
             letter-spacing: 1px;
         }
+
         .auth-buttons .btn-auth {
-            background-color: #61c3b4;
+            background-color: #61C3B4;
             color: white;
             border: none;
             padding: 8px 18px;
-            margin-left: 10px;
+            margin-right: 10px;
             border-radius: 20px;
             cursor: pointer;
             font-weight: bold;
             text-decoration: none;
+            display: inline-block;
         }
-        .hero {
-            padding: 60px 20px;
+
+        /* تخطيط الصفحة */
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 30px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .hero-title {
-            background-color: #61c3b4;
-            padding: 20px 40px;
-            border-radius: 40px;
-            font-size: 2em;
-            margin: 20px 0;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-        .services-section {
-            background-color: white;
-            color: #333;
-            padding: 40px 20px;
-            margin-top: 40px;
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
-        }
-        .services-title {
-            color: #3AB09E;
-            font-size: 1.8em;
+
+        .header-title {
+            text-align: center;
             margin-bottom: 20px;
         }
-        .services-list {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: right;
-            line-height: 2;
+
+        .header-title h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .header-title p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        /* صورة السيارة */
+        .car-image {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            margin: 15px 0;
+        }
+
+        /* البطاقة الفاتحة المركزية */
+        .card {
+            background-color: #61C3B4;
+            color: #112D27;
+            width: 100%;
+            max-width: 650px;
+            padding: 30px;
+            border-radius: 30px 30px 0 0;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            color: #112D27;
+        }
+
+        .card p {
+            font-size: 0.98em;
+            line-height: 1.8;
+            margin-bottom: 12px;
+            color: #1A3A34;
+        }
+
+        /* الشريط الجانبي */
+        .sidebar {
+            width: 180px;
+            background-color: #61C3B4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+        }
+
+        .sidebar .homepage-tag {
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
             font-size: 1.1em;
         }
-        .services-list li {
-            margin-bottom: 15px;
+
+        .tire-track {
+            margin-top: 30px;
+            width: 50px;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                padding: 20px;
+            }
+            .main-content {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
 
+    <!-- شريط القوائم -->
     <nav class="navbar">
         <div class="nav-links">
             <a href="./index.html">HOMEPAGE</a>
@@ -95,19 +165,35 @@
         </div>
     </nav>
 
-    <div class="hero">
-        <div class="hero-title">TECHNOLOGY FOR PARKING</div>
-    </div>
+    <div class="container">
+        <!-- المحتوى الرئيسي -->
+        <div class="main-content">
+            <div class="header-title">
+                <h1>الصفحة الرئيسية :</h1>
+                <p>تحسين تجربة تقني مواقف السيارات</p>
+            </div>
 
-    <div class="services-section">
-        <h2 class="services-title">خدمات تقنية مواقف السيارات</h2>
-        <ul class="services-list">
-            <li>توفير تطبيق للهواتف الذكية يساعد السائقين على العثور على مواقف السيارات الشاغرة بسهولة وفعالية.</li>
-            <li>نظام حجز مواقف السيارات عبر الإنترنت لتوفير مواقف مضمونة في الأماكن المزدحمة.</li>
-            <li>دفع آلي لرسوم المواقف عبر التطبيق أو الإنترنت.</li>
-            <li>دعم الخدمات المساعدة مثل خدمة الركن الذاتي أو خدمة البحث عن السيارات.</li>
-            <li>تقنيات الاستشعار والذكاء الاصطناعي للكشف عن المواقف الشاغرة وتوجيه السائقين إليها.</li>
-        </ul>
+            <!-- صورة السيارة (يمكنك رفع صورتك وتسميتها car.png) -->
+            <img src="car.png" alt="سيارة" class="car-image" onerror="this.style.display='none'">
+
+            <div class="card">
+                <h2>خدمات</h2>
+                <p>توفير تطبيق للهواتف الذكية يساعد السائقين على العثور على مواقف السيارات الشاغرة بسهولة وفعالية.</p>
+                <p>نظام حجز مواقف السيارات عبر الإنترنت لتوفير مواقف مضمونة في الأماكن المزدحمة.</p>
+                <p>دفع آلي لرسوم المواقف عبر التطبيق أو الإنترنت.</p>
+                <p>دعم الخدمات المساعدة مثل خدمة الركن الذاتي أو خدمة البحث عن السيارات.</p>
+                <br>
+                <p>نظام حجز مواقف السيارات عبر الإنترنت لتوفير مواقف مضمونة في الأماكن المزدحمة، تقنيات الاستشعار والذكاء الاصطناعي للكشف عن المواقف الشاغرة وتوجيه السائقين إليها.</p>
+            </div>
+        </div>
+
+        <!-- الشريط الجانبي -->
+        <div class="sidebar">
+            <div class="homepage-tag">HOMEPAGE</div>
+            <svg class="tire-track" viewBox="0 0 100 350" fill="#1A3A34">
+                <path d="M30,0 h40 v18 h-40 z M30,35 h40 v18 h-40 z M30,70 h40 v18 h-40 z M30,105 h40 v18 h-40 z M30,140 h40 v18 h-40 z M30,175 h40 v18 h-40 z M30,210 h40 v18 h-40 z M30,245 h40 v18 h-40 z M30,280 h40 v18 h-40 z M30,315 h40 v18 h-40 z" />
+            </svg>
+        </div>
     </div>
 
 </body>
